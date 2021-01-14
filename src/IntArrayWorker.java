@@ -12,6 +12,19 @@ public class IntArrayWorker {
 		matrix = theMatrix;
 	}
 
+	// getCount method
+	public int getCount(int num){
+		int count = 0;
+		for (int[] rowArray : matrix){
+			for (int item : rowArray){
+				if(item == num) {
+					count++;
+				}
+			}
+		}
+		return count;
+	}
+
 	/**
 	 * Method to return the total
 	 * 
