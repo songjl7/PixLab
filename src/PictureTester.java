@@ -91,7 +91,16 @@ public class PictureTester
   public static void testMirrorHorizontalBotToTop(){
     Picture bike = new Picture("redMotorcycle.jpg");
     bike.mirrorHorizontalBotToTop();
-    bike.explore();  }
+    bike.explore();  
+  }
+
+  // Exercise 2 (a7)
+  public static void testMirrorArms(){
+    Picture snowman = new Picture("snowman.jpg");
+    snowman.mirrorArms();
+    snowman.explore();
+  }
+
   /** Main method for testing.  Every class can have a main
     * method in Java */
   public static void main(String[] args)
@@ -107,8 +116,8 @@ public class PictureTester
     // testGrayscale();
     //testFixUnderwater();
     // testMirrorVertical();
-    //testMirrorTemple();
-    //testMirrorArms();
+    testMirrorTemple();
+    testMirrorArms();
     //testMirrorGull();
     //testMirrorDiagonal();
     //testCollage();
@@ -122,9 +131,9 @@ public class PictureTester
     //testClearBlueOverValue(200);
     //testGetAverageForColumn(0);
 
-    // Exercises  (a6)
-    testMirrorVerticalRightToLeft();
-    testMirrorHorizontal();
-    testMirrorHorizontalBotToTop();
+    // // Exercises  (a6)
+    // testMirrorVerticalRightToLeft();
+    // testMirrorHorizontal();
+    // testMirrorHorizontalBotToTop();
   }
 }
