@@ -116,6 +116,13 @@ public class PictureTester
     blank.explore();
   }
 
+  // Exercise 2 (a8)
+  public static void testMyCollage(){
+    Picture blank = new Picture("7inX95in.jpg");
+    blank.myCollage();
+    blank.explore();
+  }
+
   /** Main method for testing.  Every class can have a main
     * method in Java */
   public static void main(String[] args)
@@ -135,8 +142,9 @@ public class PictureTester
     // testMirrorArms();
     // testMirrorGull();
     //testMirrorDiagonal();
-    //testCollage();
-    testCopy();
+    // testCollage();
+    // testCopy();
+    testMyCollage();
     //testEdgeDetection();
     //testEdgeDetection2();
     //testChromakey();

@@ -307,6 +307,25 @@ public class Picture extends SimplePicture {
 		}
 	}
 
+	// Exercise 2 (a8)
+	public void myCollage(){
+		Picture hehe = new Picture("girlfront.jpg");
+		Picture beach = new Picture("beach.jpg");
+
+		// copying 1 part of hehe
+		this.copy2(hehe, 285, 545 , 84, 430);
+
+		// mirroring beach
+		beach.mirrorHorizontalBotToTop();
+		
+		// copying beach
+		this.copy(beach, 0, 0);
+
+		// copying another part of hehe
+		this.copy2(hehe, 0, 300, 200, 500);
+
+	}
+
 	/** Method to create a collage of several pictures */
 	public void createCollage() {
 		Picture flower1 = new Picture("flower1.jpg");
