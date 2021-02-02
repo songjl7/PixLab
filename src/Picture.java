@@ -195,6 +195,27 @@ public class Picture extends SimplePicture {
 		}
 	}
 
+	// Exercise 4 (challenge, a6)
+	public void mirrorDiagonal(){
+		Pixel[][] pixels = this.getPixels2D();
+		Pixel topRightPixel = null;
+		Pixel bottomLeftPixel = null;
+		int max;
+		if (pixels.length < pixels[0].length) { 
+			max = pixels.length;
+		} else {
+			max = pixels[0].length;
+		}
+
+		for (int row = 0; row < max; row++) {
+			for (int col = row; col < max; col++) {
+				topRightPixel = pixels[row][col];
+				bottomLeftPixel = pixels[col][row];
+				bottomLeftPixel.setColor(topRightPixel.getColor());
+			}
+		}
+	}
+
 	/** Mirror just part of a picture of a temple */
 	public void mirrorTemple() {
 		int mirrorPoint = 276;
